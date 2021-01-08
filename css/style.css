@@ -1,0 +1,52 @@
+body {
+  padding-top: 50%;
+  background-color: #f9f9fb;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 5%;
+  }
+}
+
+#pageHeader{
+	background-color: #3c4043;
+	color: whitesmoke;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#mainBody{
+	margin-top: 1.5%;
+	text-align: justify;
+	font-family: Cairo,Calibri;
+}
+
+#authorList a{
+	color: black;
+}
+#authorList a:hover{
+	color: #007bff;
+}
+
+#githubLink{
+	color: whitesmoke;
+	text-decoration: none;
+	cursor: pointer;
+}
+#githubLink:hover{
+	background-color: gray;
+}
+
+li {
+    margin-bottom: 1%;
+}
+
+.footer{
+	margin-top: 2.5%;
+	width: 100%;
+	background-color: #3c4043;
+	padding: 1.5%;
+	/*height: 150px;*/
+	color: whitesmoke;
+}
