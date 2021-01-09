@@ -84,7 +84,7 @@
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"opacity": 0.5,
 			"tooltip": null
 		},
@@ -206,7 +206,7 @@
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"opacity": 0.75,
 			"tooltip": null
 		},
@@ -232,7 +232,7 @@
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"opacity": 0.5,
 			"tooltip": null
 		},
@@ -367,13 +367,12 @@
 	},
 	"movies-scatter": {
 		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-		"description": "Scatter plot",
 		"data": {
 			"url": "datasets/movies.csv"
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"opacity": 0.5,
 			"tooltip": null
 		},
@@ -390,7 +389,6 @@
 	},
 	"movies-line": {
 		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-		"description": "Scatter plot (size)",
 		"data": {
 			"url": "datasets/movies.csv"
 		},
@@ -490,13 +488,12 @@
 	},
 	"movies-scatterColor": {
 		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-		"description": "Scatter plot (color)",
 		"data": {
 			"url": "datasets/movies.csv"
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"opacity": 0.8,
 			"tooltip": null
 		},
@@ -520,13 +517,12 @@
 	},
 	"movies-scatterFaceted": {
 		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-		"description": "Scatter plot (color)",
 		"data": {
 			"url": "datasets/movies.csv"
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"tooltip": null
 		},
 		"encoding": {
@@ -552,7 +548,6 @@
 	},
 	"movies-multiLine": {
 		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-		"description": "Scatter plot (size)",
 		"data": {
 			"url": "datasets/movies.csv"
 		},
@@ -665,13 +660,12 @@
 	},
 	"cars-scatter": {
 		"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-		"description": "Scatter plot",
 		"data": {
 			"url": "datasets/cars.csv"
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"opacity": 0.7,
 			"tooltip": null
 		},
@@ -791,7 +785,7 @@
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"opacity": 0.8,
 			"tooltip": null
 		},
@@ -823,7 +817,7 @@
 		},
 		"mark": {
 			"type": "point",
-			"filled": "true",
+			"filled": true,
 			"tooltip": null
 		},
 		"encoding": {

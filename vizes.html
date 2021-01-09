@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study Visualizations</title>
+	<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js" integrity="sha512-FHsFVKQ/T1KWJDGSbrUhTJyS1ph3eRrxI228ND0EGaEp6v4a/vGwPWd3Dtd/+9cI7ccofZvl/wulICEurHN1pg==" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="visDiv"></div>
+</body>
+<script type="text/javascript">
+	vegaOptMode = {
+        "actions": false,
+        "renderer": "svg",
+        "hover": true,
+        "tooltip": true
+    };
+
+
+	d3.json("vlSpecs.json")
+	  .then(function(vlSpecs) {
+	  	let datasetVisMap = {
+	  		"cars":[],
+	  		"movies":[],
+	  		"superstore":[]
+	  	};
+	  	
+	    for(let visId in vlSpecs){
+	    	if(visId.indexOf("cars")!==-1){
+	    		datasetVisMap["cars"].push(vlSpecs[visId]);
+	    	}else if(visId.indexOf("movies")!==-1){
+	    		datasetVisMap["movies"].push(vlSpecs[visId]);
+	    	}else if(visId.indexOf("superstore")!==-1){
+	    		datasetVisMap["superstore"].push(vlSpecs[visId]);
+	    	}
+	    }
+
+	    for(let dataset in datasetVisMap){
+	    	$("body").append("<hr><h1>"+dataset+"</h1><hr>")
+	    	let visContainerId = "visContainer_"+dataset;
+	    	$("body").append("<div id='"+visContainerId+"'></div>");
+	    	for(let vlSpecIdx in datasetVisMap[dataset]){
+	    		let vlSpec = datasetVisMap[dataset][vlSpecIdx];
+	    		let visId = dataset+vlSpecIdx;
+	    		$("#"+visContainerId).append("<div id='"+visId+"' class='chartDiv'></div>");
+				vegaEmbed("#"+visId, vlSpec, vegaOptMode);
+	    	}
+	    }
+	  })
+	  .catch(function(error) {
+	    console.log("Error loading vlSpecs.json", error);
+	  });
+</script>
+</html>
