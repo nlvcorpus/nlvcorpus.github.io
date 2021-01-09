@@ -1,13 +1,13 @@
 body {
-  padding-top: 50%;
+  /*padding-top: 50%;*/
   background-color: #f9f9fb;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   body {
     padding-top: 5%;
   }
-}
+}*/
 
 #pageHeader{
 	background-color: #3c4043;
@@ -46,7 +46,8 @@ li {
 	margin-top: 2.5%;
 	width: 100%;
 	background-color: #3c4043;
-	padding: 1.5%;
+	padding: .75%;
 	/*height: 150px;*/
 	color: whitesmoke;
+	font-size: small;
 }
