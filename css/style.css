@@ -10,7 +10,7 @@ body {
 }*/
 
 #pageHeader{
-	background-color: #004085;
+	background-color: #31a4ef;
 	color: whitesmoke;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -45,7 +45,7 @@ li {
 .footer{
 	margin-top: 2.5%;
 	width: 100%;
-	background-color: #004085;
+	background-color: #31a4ef;
 	padding: .75%;
 	/*height: 150px;*/
 	color: whitesmoke;
